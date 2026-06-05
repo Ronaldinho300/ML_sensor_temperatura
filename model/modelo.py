@@ -1,4 +1,5 @@
 import tensorflow as tf
+from entrena_model import model
 
 # Convertir modelo entrenado a TensorFlow Lite
 converter = tf.lite.TFLiteConverter.from_keras_model(model)

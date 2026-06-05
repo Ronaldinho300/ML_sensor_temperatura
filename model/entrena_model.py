@@ -1,6 +1,5 @@
-# entrenar_modelo.py
-
 import tensorflow as tf
+from genera_datos import X_train, X_test, y_train, y_test
 
 model = tf.keras.Sequential([
     tf.keras.layers.Dense(16, activation='relu', input_shape=(3,)),

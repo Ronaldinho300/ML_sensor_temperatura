@@ -2,14 +2,14 @@
 
 import numpy as np
 
-from entrada_datos import obtener_datos
+from entrada_datos import entrada_datos
 from cargar_modelo import cargar_modelo
 
 # cargar modelo
 interpreter, input_details, output_details = cargar_modelo()
 
 # obtener datos
-datos = obtener_datos()
+datos = entrada_datos()
 
 # convertir a float32
 entrada = np.array(datos, dtype=np.float32)
